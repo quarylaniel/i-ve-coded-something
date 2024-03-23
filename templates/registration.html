@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+        <label for="name">Your name (only Latin letters):</label>
+        <input type="text" name="name" pattern="[a-zA-Z]{3,30}" title= "Use only Latin letters">
+        </p>
+        <p>
+            <label for="login">Login (7 chars minimum):</label>
+            <input type="text" name="login" required minlength="7" maxlength="25">
+        </p>
+        <p>
+            <label for="password">Password (it has to have special symbols (@,%, etc.):</label>
+            <input type="password" name="password" required minlength="4" maxlength="25" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Password must have 1 number and 1 special symbol">>
+        </p>
+        <p>
+         <input type="submit" value="Sign In">
+        </p>
+    </form>
+</body>
+</html>
